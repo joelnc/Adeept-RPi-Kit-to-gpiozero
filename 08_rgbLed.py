@@ -2,6 +2,10 @@
 import RPi.GPIO as GPIO
 import time
 
+
+##colors = [0x00FFFF, 0x191970, 0x0000FF, 0x1E90FF, 0x6495ED]
+
+## Orig. colors
 colors = [0xFF0000, 0x00FF00, 0x0000FF, 0xFFFF00, 0xFF00FF, 0x00FFFF, 0X6F00D2, 0xFF5809]
 
 R = 11
@@ -49,8 +53,7 @@ def loop():
 	while True:
 		for col in colors:
 			setColor(col)
-			time.sleep(0.5)
-
+                        time.sleep(0.25)
 def destroy():
 	p_R.stop()
 	p_G.stop()

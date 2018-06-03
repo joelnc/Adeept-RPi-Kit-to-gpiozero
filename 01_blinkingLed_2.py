@@ -2,6 +2,8 @@
 import RPi.GPIO as GPIO
 import time
 
+## This is a test comment
+
 LedPin = 11    # pin11
 
 def setup():

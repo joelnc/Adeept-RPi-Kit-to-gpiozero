@@ -9,6 +9,8 @@
 # Date        : 2015/06/12
 #-----------------------------------------------------------
 
+## This is a test!!!
+
 import RPi.GPIO as GPIO
 import time
 
@@ -20,10 +22,10 @@ GPIO.output(LedPin, GPIO.HIGH) # Set pin to high(+3.3V) to off the led
 
 try:
 	while True:
-		print '...led on'
+		print '...chop Rubin'
 		GPIO.output(LedPin, GPIO.LOW)  # led on
-		time.sleep(0.5)
-		print 'led off...'
+		time.sleep(5)
+		print 'pet Rubin ...'
 		GPIO.output(LedPin, GPIO.HIGH) # led off
 		time.sleep(0.5)
 except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the flowing code will be  executed.
