@@ -1,17 +1,19 @@
-### Adeept Ultimate Starter Kit Python Code for Raspberry Pi
+### gpiozero Fork of Adeept Ultimate Starter Kit Python Code for Raspberry Pi (RPi.GPIO) 
 -----------------------------------------------------------------------------
 
-#### About this kit:
-This is a learning kit for Raspberry Pi. Some common electronic components and sensors are included. We also prepared an user manual(about 100 pages PDF) for you. Through the learning, you will get a better understanding of Raspberry Pi, and be able to make fascinating works based on Raspberry Pi.
+#### Original Adeept Repo:
+https://github.com/adeept/Adeept_Ultimate_Starter_Kit_Python_Code_for_RPi
 
 -----------------------------------------------------------------------------
-#### About Adeept:
-Adeept is a technical service team of open source software and hardware. Dedicated to applying the Internet and the latest industrial technology in open source area, we strive to provide best hardware support and software service for general makers and electronic enthusiasts around the world. We aim to create infinite possibilities with sharing. No matter what field you are in, we can lead you into the electronic world and bring your ideas into reality.
+#### Motivation:
+For young learners, the lower level RPi.GPIO library can be a bit overwhelming.  
+Transistioning the projects to use the higher level gpiozero library 
+(https://gpiozero.readthedocs.io/en/stable/) makes them much more kid friendly 
+when trying to teach circuitry, Python, emacs, git and ssh concurrently. 
 
 -----------------------------------------------------------------------------
-#### Contact Us: 
-website:
-	www.adeept.com
-
-E-mail:
-	support@adeept.com
+#### Structure:
+Orignal RPi.GPIO scripts are in the Original_Files folder, and available at the 
+Adeept repo linked above.  Numbered python files in the main directory are gpiozero
+scripts that are based on the projects in Adeept's repo.  The scripts refer to wiring 
+diagrams/fritzing avaialbe from Adeept via a post in the their issues section. 
