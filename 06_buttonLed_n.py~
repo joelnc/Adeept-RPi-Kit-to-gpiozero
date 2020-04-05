@@ -1,0 +1,13 @@
+from gpiozero import LED, Button
+from signal import pause
+
+led = LED(26) # GPIO26 / pin 37 
+button = Button(21) # GPIO21 / pin 40
+
+while True:
+        if button.is_pressed:
+                led.on
+        else:
+                led.off
+
+pause()

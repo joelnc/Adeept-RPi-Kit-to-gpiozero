@@ -12,7 +12,7 @@ class Adafruit_CharLCD:
 
     # commands
     LCD_CLEARDISPLAY 		= 0x01
-    LCD_RETURNHOME 		    = 0x02
+    LCD_RETURNHOME 		= 0x02
     LCD_ENTRYMODESET 		= 0x04
     LCD_DISPLAYCONTROL 		= 0x08
     LCD_CURSORSHIFT 		= 0x10

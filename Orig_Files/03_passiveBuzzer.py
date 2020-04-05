@@ -14,7 +14,7 @@ p.start(50)  # Duty cycle: 50%
 try:
 	while True:
                 ## Trying to play happy birthday...
-                for f in [400,400,600,400,900,800,1, 400,400,600,400,1100,900,1]:
+                for f in [400,400,500,400,700,600,1,400,400,800,700,15]:
                         p.ChangeFrequency(f)
                         print(f)
                         time.sleep(0.5)
