@@ -1,48 +1,27 @@
-#!/usr/bin/env python
-
 #-----------------------------------------------------------
-# File name   : 01_blinkingLed_1.py
-# Description : make an led blinking.
-# Author      : Jason
-# E-mail      : jason@adeept.com
-# Website     : www.adeept.com
-# Date        : 2015/06/12
+# File name   : 01_blinkingLed_0.py
+# Description : Make an led blink using a python scirpt to conrol
+# the gpio pins.
+
+# Don't forget your safety glasses :)
 #-----------------------------------------------------------
 
+# Import LED and pause functions only... not the entire libraries
 from gpiozero import LED
-from time import sleep
 from signal import pause
 
-led = LED(26) # pin 37
+# Set the control pin to match the wiring setup.
+# This builds off of ../01_led.png
+myLed = LED(17) # pin 11 / GPIO17
 
-led.blink(.1)
+# Set the LED to blink where the input number defines how long on/off
+myLed.blink(.5) # in units of seconds
 
+# Without this call to "Signal pause" the LED will blink once
+# and the then the script is over.  This call makes it keep running
+# until it is manually killed at the shell 
 pause()
 
-#while True:
-#        led.on()
- #       sleep(1)
- #       led.off()
-  #      sleep(1)
-
-
-
-
-#LedPin = 11    # pin 11
-
-#GPIO.setmode(GPIO.BOARD)       # Numbers pins by physical location
-#GPIO.setup(LedPin, GPIO.OUT)   # Set pin mode as output
-#GPIO.output(LedPin, GPIO.HIGH) # Set pin to high(+3.3V) to off the led
-
-#try:
-#	while True:
-#		print '...led on'
-#		GPIO.output(LedPin, GPIO.LOW)  # led on
-#		time.sleep(0.5)
-#		print 'led off...'
-#		GPIO.output(LedPin, GPIO.HIGH) # led off
-#		time.sleep(0.5)
-#except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the flowing code will be  executed.
-#	GPIO.output(LedPin, GPIO.HIGH)     # led off
-#	GPIO.cleanup()                     # Release resource
+# That's it.  Compare the 3 lines of code in this script to the code
+# in Orig_Files/01_blinkingLed_1.py.  Much easier.
 
