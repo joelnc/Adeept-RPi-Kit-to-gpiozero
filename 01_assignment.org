@@ -1,5 +1,5 @@
 #+STARTUP: hidestars
-* LED Assignments
+* LED Assignments:
 ** Start by building the circuit.  In the Adeept wiring folder there is a 
    'png', in there is 01_led.png. 
 
