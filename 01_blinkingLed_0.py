@@ -2,7 +2,8 @@
 # File name   : 01_blinkingLed_0.py
 # Description : Make an led blink using a python scirpt to conrol
 #               the gpio pins.
-#
+# Wiring      : See the wiring diagram in Adeept/wiring/png/01_led.png
+
 # Don't forget your safety glasses :)
 #-----------------------------------------------------------
 

@@ -1,8 +1,10 @@
 #-----------------------------------------------------------
 # File name   : 01_blinkingLed_1.py
 # Description : Make an led blink. This script differs in that
-# it uses .on and .off instead of .blink in the previous script.
-# There's more than one way to skin a cat....
+#               it uses .on and .off instead of .blink in the
+#               previous script. Goes to show, there's more than
+#               one way to skin a cat....
+
 #-----------------------------------------------------------
 
 # Import LED and pause functions only... not the entire libraries
