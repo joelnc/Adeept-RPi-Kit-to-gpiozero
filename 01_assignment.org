@@ -1,7 +1,13 @@
 #+STARTUP: hidestars
+<<<<<<< HEAD
 * LED Assignments
 ** Start by building the circuit.  
    In the Adeept wiring folder there is a  'png', in there is 01_led.png. 
+=======
+* LED Assignments:
+** Start by building the circuit.  In the Adeept wiring folder there is a 
+   'png', in there is 01_led.png. 
+>>>>>>> 3005aa55a4bed333f022c74e8188a964bb561bdf
 
 ** Next try running the 01_blinkingLed_0.py and 01_blinkingLed_1.py programs from shell.  
    Read through each program, and recall that only the lines  that DO NOT 
