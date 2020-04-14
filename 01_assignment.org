@@ -1,14 +1,7 @@
 #+STARTUP: hidestars
-<<<<<<< HEAD
 * LED Assignments
 ** Start by building the circuit.  
    In the Adeept wiring folder there is a  'png', in there is 01_led.png. 
-=======
-* LED Assignments:
-** Start by building the circuit.  In the Adeept wiring folder there is a 
-   'png', in there is 01_led.png. 
->>>>>>> 3005aa55a4bed333f022c74e8188a964bb561bdf
-
 ** Next try running the 01_blinkingLed_0.py and 01_blinkingLed_1.py programs from shell.  
    Read through each program, and recall that only the lines  that DO NOT 
    start with '#' are python commands/code.  Everything else is notes explaining 
@@ -30,4 +23,9 @@
     resistor and LED, and then return the current to the negative power rail and 
     connect that to ground. What is different in this case? Where is the ground? 
 
-  
+*** (4) Examine the 01_blinkingLed_1.py script.  Note in particular the variable
+    'blinkLight' which is set to a value of 'True'.  Now, imagine that somehow
+    we had wired up a button too, and when you press that button it resets the 
+    value of blinkLight to be 'False'.  Describe what you think would happen if
+    you ran the script, let it run of 10 seconds, and the hit the button.  How
+    would the LED behave?
