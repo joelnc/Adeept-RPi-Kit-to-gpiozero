@@ -1,0 +1,79 @@
+#+STARTUP: hidestars
+* Active Buzzer Assignments
+** Simple active buzzer with beep command
+
+** Maybe then integrated a button, either direct inline circuit, or via 
+   seperate GPIO pin 
+
+** Next, maybe a script to make a counter, each press of button sounds buzz and  
+   ups a counter on LCD screen?
+
+** Then maybe a second button that resets the counter to zero?
+
+** Or potentiometer to control the beep speed (need a better / second potmeter)
+
+** Move on to tonal buzzer, drinkee?
+
+** poteniometer to initialize a timer via screen, button to start timer with
+   on screen countdown, play buzzer and led on when done.
+
+** On prev, maybe green yellow red light as time goes down, warning beep to 
+   steady beep.
+
+
+
+
+** Start by building the circuits.  This one will follow diagram in section 
+   2.6 of the gpiozero.readthedocs.io basic recipes. The only difference will
+   be that you should connect via the red GPIO extension board- not directly into  
+   the pins on the Pi.
+
+** Next try running the 02_buttonLed_0.py script.
+   Read the commands in the script carefully to try to understand what the 
+   script is doing.  
+
+*** Question/Excersise (1)
+    Change the line 'myLed = LED(17)' so that it reads as 
+    'myRedLed = LED(17)'.  Save the script with this change.  Now,
+    does the program still work?  If not, what do you have to do make it work
+    with that new name for the LED?
+
+*** Question/Excersise (2)
+    Next try changing the line 'myButton.when_pressed = myLed.on' so that it reads
+    myButton.when_pressed = myLed.LightUp'.  Save that change and then try running 
+    the script.  Now, does the program still work?  If not, are there any other 
+    changes that you could make to the script to make it run correctly? (Hint: it 
+    might not be possible).
+    
+    Part B:  Any idea why the script is not working?  After all turning an LED on 
+    is kind of the same thing as having it 'LightUp'?
+
+** Next try running the 2_buttonLed_1.py script. 
+   After you have it working, read through the script and try to understand what 
+   is happening.
+
+*** Question/Excersise (3)
+    Describe what is different in this script compared to the first buttonLed script?
+
+
+** That is it for day 1 of the button/LED.  The stuff below is for next time. 
+
+** Next up, open and read the  02_buttonLed_2.py script. 
+
+*** Question/Excersise (4)
+    What is different about this script compared to the previous 2 
+    button / led scripts?
+
+** Now, run the script and test the 
+
+*** Question/Excersise (5)
+    Does is work as expected?  What does the button do?
+
+** Lastly, at the 'print("...")' lines within the script, change
+   the text within the quotations marks from "Button has been..." to something 
+   silly.  Then save the script, run it, and make sure than it works as expected.
+   If the LED lights up when the button is pressed and it displays your silly 
+   text at the shell, then you are done for today.  
+     
+     
+
