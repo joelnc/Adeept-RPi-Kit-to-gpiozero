@@ -1,10 +1,12 @@
 #-----------------------------------------------------------
-# File name   : 03_activeBuzzer_0.py
+# File name   : 03_buzzer_0.py
 # Description : Wire up a simple on/off buzzer to play when
 #               the script runs.
-# Wiring      : See the Adeept Wiring PNG 02_activeBuzzer.png
+# Wiring      : Run a connection from the GPIO18 pin into the
+#               positive end of the buzzer, then close the circuit
+#               by tieing the negative end into ground.
 #
-# Pretty boring, but get introduced to a transistor.
+# Pretty boring, but make buzzer sound programatically.
 #-----------------------------------------------------------
 
 # Import Buzzer  and pause functions only... not the entire libraries
@@ -16,7 +18,7 @@ myBuzz = Buzzer(18) # GPIO18 / pin 12
 
 # Use included function 'beep' to play the sound
 # parameters are beep(on_time, off_time, repeat), with time in seconds
-myBuzz.beep(2,1)
+myBuzz.beep(0.5, 1, 3) # buzz for 1/2 second, off for 1 second, repeat 3 timesz
 
 # ... to keep script running. That's it.
 pause()
